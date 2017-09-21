@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>修改注册信息</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./css/main.css"/>
+</h:head>
+<h:body>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>修改信息</h1>
+			<p>刷爆题库得高分</p>
+			<p><a class="btn btn-primary btn-lg" href="index.jsp" role="button">回到首页</a></p>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 ">
+					<h:form>
+						<p><label>密码
+							<h:inputSecret value="#{updateBean.userPwd}" >
+								<f:validator validatorId="com.manage.validator.UpdateValidator" required="true" validatorMessage="不少于8位"/>
+							</h:inputSecret>
+							</label></p>
+						<p><label>注册时的手机号<h:inputText value="#{updateBean.userPhone}" required="true"/></label></p>
+						<p><label>安全问题<h:inputText value="#{updateBean.security}" required="true"/></label></p>
+						<p><label>问题答案<h:inputText value="##{updateBean.answer}" required="true"/></label></p>
+						<p><h:commandButton action="#{updateBean.executeUpdate()}" value="更新信息"/></p>
+					</h:form>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

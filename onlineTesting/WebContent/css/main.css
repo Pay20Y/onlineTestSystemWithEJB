@@ -1,0 +1,8 @@
+.jumbotron {
+    background: url(../img/jumbo.jpg) no-repeat;
+    height: 700px;
+}
+
+input, select {
+    margin-left: 50px;
+}

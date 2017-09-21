@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Signup.xhtml" PATH="/Signup.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Signup.xhtml:0" NAME="item"
+   PATH="/Signup.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=signup"
+    NAME="output" PATH="/jumpProc?next=signup"
+    TARGET="rules:#jumpProc?next=signup" TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Login.xhtml" PATH="/Login.xhtml"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Login.xhtml:0" NAME="item"
+   PATH="/Login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=login" NAME="output"
+    PATH="/jumpProc?next=login" TARGET="rules:#jumpProc?next=login"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#addQuestion.xhtml" PATH="/addQuestion.xhtml"
+  SHAPE="32,273,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#addQuestion.xhtml:0" NAME="item"
+   PATH="/addQuestion.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=add" NAME="output"
+    PATH="/jumpProc?next=add" TARGET="rules:#jumpProc?next=add"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#addQuestion_other.xhtml"
+  PATH="/addQuestion_other.xhtml" SHAPE="32,417,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#addQuestion_other.xhtml:0" NAME="item"
+   PATH="/addQuestion_other.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=add" NAME="output"
+    PATH="/jumpProc?next=add" TARGET="rules:#jumpProc?next=add"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#postInfo.xhtml" PATH="/postInfo.xhtml"
+  SHAPE="32,561,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#postInfo.xhtml:0" NAME="item"
+   PATH="/postInfo.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=post" NAME="output"
+    PATH="/jumpProc?next=post" TARGET="rules:#jumpProc?next=post"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#updateUser.xhtml" PATH="/updateUser.xhtml"
+  SHAPE="32,593,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#updateUser.xhtml:0" NAME="item"
+   PATH="/updateUser.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#jumpProc?next=update"
+    NAME="output" PATH="/jumpProc?next=update"
+    TARGET="rules:#jumpProc?next=update" TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#jumpProc?next=failure"
+    NAME="output1" PATH="/jumpProc?next=failure"
+    TARGET="rules:#jumpProc?next=failure" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=add" PATH="/jumpProc?next=add"
+  SHAPE="304,465,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=post"
+  PATH="/jumpProc?next=post" SHAPE="304,721,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=signup"
+  PATH="/jumpProc?next=signup" SHAPE="304,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=failure"
+  PATH="/jumpProc?next=failure" SHAPE="304,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=login"
+  PATH="/jumpProc?next=login" SHAPE="304,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#jumpProc?next=update"
+  PATH="/jumpProc?next=update" SHAPE="304,865,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>添加题库</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+<link rel="stylesheet" href="./css/main.css"/>
+</h:head>
+<h:body>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>添加客观题</h1>
+			<p>刷爆题库得高分</p>
+			<p><a class="btn btn-primary btn-lg" href="index.jsp" role="button">回到首页</a></p>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 ">
+					<h:form>
+						<p><label>问题类型<select onChange="location.replace(this.options[this.selectedIndex].value)">
+							<option value="addQuestion_other.xhtml">选择题</option>
+							<option value="addQuestion.xhtml">问答题</option>
+						</select></label></p>
+						<p><label>题干
+							<h:inputText value="#{addques2Bean.questionTitle}" required="true"/></label></p>
+						<p><label>选项A<h:inputText value="#{addques2Bean.item1}" required="true"/></label></p>
+						<p><label>选项B<h:inputText value="#{addques2Bean.item2}" required="true"/></label></p>
+						<p><label>选项C<h:inputText value="#{addques2Bean.item3}" required="true"/></label></p>
+						<p><label>选项D<h:inputText value="#{addques2Bean.item4}" required="true"/></label></p>
+						<p><label>答案<h:inputText value="#{addques2Bean.questionAnswer}" required="true"/></label></p>
+						<p><label>分值<h:inputText value="#{addques2Bean.questionScore}" required="true"/></label></p>
+						<p><h:commandButton action="#{addques2Bean.insert()}" value="添加客观题"/></p>
+					</h:form>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>
